@@ -1,0 +1,3 @@
+
+#apt-get install libmysql++-dev
+#g++ nome_programa.c -o prog -lmysqlclient

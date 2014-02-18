@@ -1,0 +1,3 @@
+Olá amigo! Seu exemplo funcionou fazendo o seguinte procedimento:
+#apt-get install libmysql++-dev
+#g++ tst0.c -o tst0 -lmysqlclient

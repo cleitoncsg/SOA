@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <mysql/mysql.h> 
+
+
+int main()
+{
+        MYSQL conexao;
+
+	mysql_init(&conexao);//função do mysql para conectar o BD
+
+	if ( mysql_real_connect(&conexao, "localhost", "root", "cleitoncsg", "basededad", 0, NULL, 0) )
+	{ //localhost = servidor da aplicação , root = usuario do banco , cleitoncsg = senha.
+	    printf("conectado com sucesso!\n");
+	    mysql_close(&conexao);
+	}
+	else
+	{
+	    printf("Falha de conexao\n");
+	    printf("Erro %d : %d\n", mysql_errno(&conexao), mysql_error(&conexao));
+	}
+}
