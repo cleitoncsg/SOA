@@ -1,6 +1,0 @@
- 
- Comment(
-       "INFORMAÇÃO = ", VARIAVEL +"\n",
-      
-      ""
- );
